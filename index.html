@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>js carousel</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+    <div class="container">    
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="images/When_a_cat_poses.JPG"></div>
+      <div class="swiper-slide"><img src="images/Felis_silvestris_silvestris_Luc_Viatour.jpg"></div>
+      <div class="swiper-slide"><img src="images/cute-curious-cat.jpg"></div>
+      <div class="swiper-slide"><img src="images/f52edce4963f31b5ba2380c5cf800dc2.jpg"></div>
+      <div class="swiper-slide"><img src="images/1200px-Siberian_black_tabby_blotched_cat_01.jpg"></div>
+      <div class="swiper-slide"><img src="images/photo-1615789591457-74a63395c990.jpg"></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+     <script>
+      const swiper = new Swiper('.swiper', {
+    autoplay: {
+       delay: 3000,
+       disableOnInteraction: false,
+    },
+   loop: true,
+ 
+   // If we need pagination
+   pagination: {
+     el: '.swiper-pagination',
+     clickable: true,
+   },
+ 
+   navigation: {
+     nextEl: '.swiper-button-next',
+     prevEl: '.swiper-button-prev',
+   },  
+ });
+     </script>
+</body>
+</html>
